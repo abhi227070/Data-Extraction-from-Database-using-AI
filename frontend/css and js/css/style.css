@@ -1,0 +1,126 @@
+body {
+    background-color: white;
+    font-family: "Roboto", sans-serif; /* Choose a modern font */
+    font-weight: 400;
+    background: url('img3.jpg') no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.container {
+    display: flex; /* Arrange elements horizontally */
+}
+  
+.text-content {
+    flex: 1; /* Make text content take up half the space */
+    text-align: center;
+    color: white; /* Assuming a dark background for the text content */
+}
+  
+.animated-text {
+    opacity: 0; /* Initially hide both texts */
+}
+
+span,p {
+    text-align: left;
+    margin:top;
+    color: white;
+}
+
+.wrapper {
+    margin: 30px auto; /* Center the wrapper horizontally */
+    width: 500px; /* Set a width for the wrapper */
+    height: 550px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); /* Subtle box shadow */
+    padding: 20px; /* Add some padding inside the wrapper */
+    backdrop-filter: blur(20px);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+form {
+    display: flex; /* Arrange elements horizontally */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Add space between elements */
+}
+.textarea{
+    width: 94%; /* Make input fields full width */
+    /* height: 100px; */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Add some border radius to input fields */
+    background-color: transparent;
+    color: white;
+}
+
+::placeholder{
+    color: white;
+}
+
+.remember-forgot {
+    display: flex; /* Arrange checkbox and link horizontally */
+    justify-content: space-between; /* Align elements to opposite sides */
+    align-items: center; /* Vertically align elements */
+}
+
+.remember-forgot a, .register{
+    color: white; /* Dim the color of the forgot password link */
+    text-decoration: none;
+    transition: text-decoration 0.15s;
+}
+
+.remember-forgot a:hover, .register:hover {
+    text-decoration: underline;
+}
+
+
+.clear,.submit {
+    background-color: white; /* Green color for the button */
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer; /* Indicate clickable behavior */
+    transition: background-color 0.15s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit:hover ,.clear:hover{
+    background-color: #d9d9d9; /* Darken the button on hover */
+}
+
+.headline{
+    font-size: 50px;
+    position: relative;
+    left: 0;
+}
+
+.icon-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.icon{
+    width: 100px;
+}
+
+.icon-text{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.loading-message-answer,.loading-message-sql{
+    margin-left: 5px;
+    font-size: small;
+    font-weight: 400;
+}

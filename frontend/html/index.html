@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueryGenie.AI</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static',filename='css/img5.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="icon-title">
+    <img src="{{ url_for('static',filename='css/icon.png') }}" alt="" class="icon">
+    <span class="icon-text">QueryGenie.AI</span>
+  </div>
+
+  <div class="wrapper">
+    <h1>Query Genie</h1>
+
+    <form id="submit-question" action="/result" method="post" onsubmit="return false">
+
+      <textarea placeholder="Enter your question Here.." name="question" class="textarea question" cols="25" rows="4" form="submit-question" required></textarea>
+      <button class="submit" onclick="submitQuestion();">Submit</button>
+      
+
+      <span>
+        SQL Query:
+        <div class="loading-message-sql" style="display: none;">Loading...</div>
+      </span>
+      <textarea placeholder="SQL Query will show here.." class="textarea sql" name="answer-text-area" id="" cols="25" rows="4"></textarea>
+
+      <span>
+        Answer:
+        <div class="loading-message-answer" style="display: none;">Loading...</div>
+      </span>
+      <textarea placeholder="Your answer will show here.." class="textarea answer" name="answer-text-area" id="" cols="25" rows="4"></textarea>
+
+      <button onclick="clearButton();" class="clear">Clear</button>
+
+    </form>
+
+    
+        
+  </div>
+  <script src="{{ url_for('static',filename='js/script.js') }}" defer></script>
+</body>
+</html>
