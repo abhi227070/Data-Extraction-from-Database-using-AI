@@ -1,3 +1,14 @@
+# Here the few shot datas are present in the form of list of dictionary used to create new_chain object using few_shot learning technique and reduce error
+
+# The input should follow the given format
+
+# {
+#                 'Question': 'What is the total profit we can earn by selling all products excluding the discounts?',
+#                 'SQLQuery':'SELECT SUM(price*stock_quantity) FROM t_shirts',
+#                 'SQLResult':'Result of the SQL query',
+#                 'Answer':'85513',
+# }
+
 few_shots = [
             {
                 'Question': 'What is the total profit we can earn by selling all products excluding the discounts?',

@@ -1,3 +1,5 @@
+# These are all the required libraries to install before run the program
+
 chromadb
 google-generativeai
 langchain

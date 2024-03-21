@@ -1,3 +1,4 @@
+# Importing all the dependencies
 from langchain_experimental.sql import SQLDatabaseChain
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
@@ -7,6 +8,7 @@ from langchain.prompts import SemanticSimilarityExampleSelector
 from langchain.prompts import FewShotPromptTemplate
 from data.few_shots_data import few_shots
 
+# Creating a function to create Langchain chain object which will connect LLM and Database also introducing few shot learning
 def new_chain_connection(llm,db):
     embeddings = HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
     to_vectorize = [" ".join(example.values()) for example in few_shots]

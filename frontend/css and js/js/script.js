@@ -1,3 +1,4 @@
+// This is the function used to submit the question and get the answer from the backend
 function submitQuestion() {
 
     document.querySelector(".loading-message-sql").style.display = "inline-block";
@@ -30,6 +31,7 @@ function submitQuestion() {
     });
 }
 
+// Clear the answers from the textarea
 function clearButton(){
     document.querySelector(".sql").value = "";
     document.querySelector(".answer").value = "";

@@ -1,14 +1,21 @@
+# Importing the dependencies 
 from flask import Flask,render_template,request,jsonify
 from backend.langchain_helper import get_langchain_output
 
+
+# Creating the langchain object 
 langchain_object = get_langchain_output()
-    
+ 
+ 
+# Creating the flask app   
 app = Flask(__name__,template_folder="frontend/html",static_folder="frontend/css and js")
 
+# Rendering the HTML web page on the route '\'
 @app.route('/')
 def index():
     return render_template('index.html')
 
+# Creating route for processing and sending results to javascript
 @app.route('/result',methods=['GET','POST'])
 def predict():
     
@@ -27,5 +34,6 @@ def predict():
     
     return output_data
 
+# This is the basic syntax to call python code
 if __name__=='__main__':
     app.run(debug=True)

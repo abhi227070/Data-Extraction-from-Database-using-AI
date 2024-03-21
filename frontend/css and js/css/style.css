@@ -1,6 +1,8 @@
+/* CSS stylesheet used to style our HTML to improve the UI */
+
 body {
     background-color: white;
-    font-family: "Roboto", sans-serif; /* Choose a modern font */
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     background: url('img3.jpg') no-repeat;
     background-size: auto;
@@ -8,17 +10,17 @@ body {
 }
 
 .container {
-    display: flex; /* Arrange elements horizontally */
+    display: flex;
 }
   
 .text-content {
-    flex: 1; /* Make text content take up half the space */
+    flex: 1; 
     text-align: center;
-    color: white; /* Assuming a dark background for the text content */
+    color: white;
 }
   
 .animated-text {
-    opacity: 0; /* Initially hide both texts */
+    opacity: 0;
 }
 
 span,p {
@@ -28,14 +30,14 @@ span,p {
 }
 
 .wrapper {
-    margin: 30px auto; /* Center the wrapper horizontally */
-    width: 500px; /* Set a width for the wrapper */
+    margin: 30px auto; 
+    width: 500px; 
     height: 550px;
     background-color: transparent;
     border: 1px solid lightgray;
-    border-radius: 5px; /* Add rounded corners */
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); /* Subtle box shadow */
-    padding: 20px; /* Add some padding inside the wrapper */
+    border-radius: 5px; 
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); 
+    padding: 20px;
     backdrop-filter: blur(20px);
 }
 
@@ -46,16 +48,15 @@ h1 {
 }
 
 form {
-    display: flex; /* Arrange elements horizontally */
-    flex-direction: column; /* Stack elements vertically */
-    gap: 10px; /* Add space between elements */
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
 }
 .textarea{
-    width: 94%; /* Make input fields full width */
-    /* height: 100px; */
+    width: 94%; 
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px; /* Add some border radius to input fields */
+    border-radius: 5px; 
     background-color: transparent;
     color: white;
 }
@@ -65,13 +66,13 @@ form {
 }
 
 .remember-forgot {
-    display: flex; /* Arrange checkbox and link horizontally */
-    justify-content: space-between; /* Align elements to opposite sides */
-    align-items: center; /* Vertically align elements */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .remember-forgot a, .register{
-    color: white; /* Dim the color of the forgot password link */
+    color: white;
     text-decoration: none;
     transition: text-decoration 0.15s;
 }
@@ -82,19 +83,19 @@ form {
 
 
 .clear,.submit {
-    background-color: white; /* Green color for the button */
+    background-color: white;
     color: black;
     padding: 10px 15px;
     border: none;
     border-radius: 100px;
-    cursor: pointer; /* Indicate clickable behavior */
+    cursor: pointer;
     transition: background-color 0.15s;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .submit:hover ,.clear:hover{
-    background-color: #d9d9d9; /* Darken the button on hover */
+    background-color: #d9d9d9;
 }
 
 .headline{

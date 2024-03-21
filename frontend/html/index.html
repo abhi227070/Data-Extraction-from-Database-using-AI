@@ -1,5 +1,7 @@
+<!-- This is the HTML code for the frontend -->
 <!DOCTYPE html>
 <html lang="en">
+<!-- This is the header part which contains all the metadata and link to css file -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,26 +14,31 @@
 </head>
 <body>
 
+  <!-- This div container is used for Brand Icon and Brand Name -->
   <div class="icon-title">
     <img src="{{ url_for('static',filename='css/icon.png') }}" alt="" class="icon">
     <span class="icon-text">QueryGenie.AI</span>
   </div>
 
+  <!-- This is the main wrapper container which contains the fields of input and output -->
   <div class="wrapper">
     <h1>Query Genie</h1>
 
     <form id="submit-question" action="/result" method="post" onsubmit="return false">
 
+      <!-- Taking question as User Input -->
       <textarea placeholder="Enter your question Here.." name="question" class="textarea question" cols="25" rows="4" form="submit-question" required></textarea>
       <button class="submit" onclick="submitQuestion();">Submit</button>
       
 
+      <!-- This shows the SQL Query as Output -->
       <span>
         SQL Query:
         <div class="loading-message-sql" style="display: none;">Loading...</div>
       </span>
       <textarea placeholder="SQL Query will show here.." class="textarea sql" name="answer-text-area" id="" cols="25" rows="4"></textarea>
 
+      <!-- This shows the actual answer as Output -->
       <span>
         Answer:
         <div class="loading-message-answer" style="display: none;">Loading...</div>
@@ -41,10 +48,11 @@
       <button onclick="clearButton();" class="clear">Clear</button>
 
     </form>
-
-    
         
   </div>
+
+  <!-- This is the script file which connects the backend -->
   <script src="{{ url_for('static',filename='js/script.js') }}" defer></script>
+
 </body>
 </html>
