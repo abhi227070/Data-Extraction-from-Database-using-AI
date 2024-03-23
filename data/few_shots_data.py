@@ -63,6 +63,12 @@ few_shots = [
                 'SQLQuery':"SELECT DISTINCT(`discount_id`) FROM `t_shirts` WHERE `brand` = 'Nike'; ",
                 'SQLResult':'Result of the SQL query',
                 'Answer':'3',
+            },
+            {
+                'Question': 'How many Adidas stocks are there?',
+                'SQLQuery':"SELECT SUM(`stock_quantity`) FROM `t_shirts` WHERE `brand` = 'Adidas'; ",
+                'SQLResult':'Result of the SQL query',
+                'Answer':'757',
             }
             
             
