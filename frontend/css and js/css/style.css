@@ -4,9 +4,9 @@ body {
     background-color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    background: url('img3.jpg') no-repeat;
+    /* background: url('img3.jpg') no-repeat;
     background-size: auto;
-    background-position: center;
+    background-position: center; */
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
 .text-content {
     flex: 1; 
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
   
 .animated-text {
@@ -26,17 +26,17 @@ body {
 span,p {
     text-align: left;
     margin:top;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .wrapper {
     margin: 30px auto; 
     width: 500px; 
     height: 550px;
-    background-color: transparent;
-    border: 1px solid lightgray;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(144, 144, 144);
     border-radius: 5px; 
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
     padding: 20px;
     backdrop-filter: blur(20px);
 }
@@ -44,7 +44,7 @@ span,p {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 form {
@@ -55,14 +55,15 @@ form {
 .textarea{
     width: 94%; 
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(144, 144, 144);
     border-radius: 5px; 
     background-color: transparent;
-    color: white;
+    color: rgb(0, 0, 0);
+    resize: none;
 }
 
 ::placeholder{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .remember-forgot {
@@ -83,19 +84,20 @@ form {
 
 
 .clear,.submit {
-    background-color: white;
-    color: black;
+    background-color: #196ae5;
+    color: rgb(253, 253, 253);
     padding: 10px 15px;
     border: none;
-    border-radius: 100px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.15s;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100px;
 }
 
 .submit:hover ,.clear:hover{
-    background-color: #d9d9d9;
+    background-color: rgb(116, 0, 142);
 }
 
 .headline{
@@ -124,4 +126,5 @@ form {
     margin-left: 5px;
     font-size: small;
     font-weight: 400;
+    color: black;
 }
