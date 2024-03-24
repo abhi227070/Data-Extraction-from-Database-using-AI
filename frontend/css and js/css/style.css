@@ -97,7 +97,11 @@ form {
 }
 
 .submit:hover ,.clear:hover{
-    background-color: rgb(116, 0, 142);
+    background-color: #0051ca;
+}
+
+.submit:active,.clear:active{
+    background-color: #003d99;
 }
 
 .headline{
