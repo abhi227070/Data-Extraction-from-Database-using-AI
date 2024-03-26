@@ -82,6 +82,7 @@ def predict():
 # This is the basic syntax to call python code
 if __name__ == '__main__':
     app.run(debug=True)
+```
 
 ## Screenshots
 
