@@ -86,7 +86,7 @@ if __name__ == '__main__':
 
 ## Screenshots
 
-![Diabetes Prediction](screenshots/screenshot1.png)
-![Heart Disease Prediction](screenshots/screenshot2.png)
-![Breast Cancer Prediction](screenshots/screenshot3.png)
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 3](screenshots/screenshot3.png)
 
